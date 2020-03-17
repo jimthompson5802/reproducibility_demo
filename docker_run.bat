@@ -1,5 +1,6 @@
 docker run -v %cd%:/opt/project ^
 	-p 8888:8888 ^
+	--rm ^
 	-w /opt/project jpynb ^
 	/opt/conda/bin/jupyter notebook --notebook-dir=/opt/project ^
         --ip=0.0.0.0 ^
